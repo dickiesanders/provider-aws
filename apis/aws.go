@@ -38,6 +38,7 @@ import (
 	identityv1beta1 "github.com/crossplane/provider-aws/apis/identity/v1beta1"
 	kmsv1alpha1 "github.com/crossplane/provider-aws/apis/kms/v1alpha1"
 	notificationv1alpha3 "github.com/crossplane/provider-aws/apis/notification/v1alpha1"
+	organizationsv1alpha1 "github.com/crossplane/provider-aws/apis/organizations/v1alpha1"
 	rdsv1alpha1 "github.com/crossplane/provider-aws/apis/rds/v1alpha1"
 	redshiftv1alpha1 "github.com/crossplane/provider-aws/apis/redshift/v1alpha1"
 	route53v1alpha1 "github.com/crossplane/provider-aws/apis/route53/v1alpha1"
@@ -81,6 +82,7 @@ func init() {
 		kmsv1alpha1.SchemeBuilder.AddToScheme,
 		efsv1alpha1.SchemeBuilder.AddToScheme,
 		rdsv1alpha1.SchemeBuilder.AddToScheme,
+		organizationsv1alpha1.SchemaBuilder.AddToSchema,
 	)
 }
 
